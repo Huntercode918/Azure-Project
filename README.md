@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/azure.png" alt="logo" />
+</p>
+
 # Azure-Project
 # 💻 Início Rápido: Criar uma Máquina Virtual do Windows no Portal do Azure
 
@@ -31,21 +35,28 @@ As máquinas virtuais (VMs) do Azure podem ser criadas por meio do Portal do Azu
 
    * **Nome da VM:** `myVM`
    * **Imagem:** Windows Server 2022 Datacenter: Azure Edition – x64 Gen 2
+   ![imagem1](images/instance-details.png)
    * **Região:** escolha a mais próxima para reduzir latência
    * **Tamanho:** selecione uma SKU de teste (ex.: B1s)
 4. Em **Conta de administrador**, defina:
+   ![imagem1](images/administrator-account.png)
 
    * **Nome de usuário:** `azureuser`
    * **Senha:** mínimo de 12 caracteres, complexidade padrão
 5. Em **Regras de porta de entrada**, selecione **Permitir portas selecionadas** e marque **RDP (3389)** e **HTTP (80)**.
-6. Clique em **Revisar + criar**, aguarde a validação e, em seguida, **Criar**.
-7. Ao concluir a implantação, selecione **Ir para o recurso**.
+   ![imagem1](images/inbound-port-rules.png)
 
+6. Clique em **Revisar + criar**, aguarde a validação e, em seguida, **Criar**.
+  ![imagem1](images/review-create.png)
+
+8. Ao concluir a implantação, selecione **Ir para o recurso**.
+  ![imagem1](images/next-steps.png)
 ---
 
 ## 3. Conectar-se à VM via RDP
 
 1. Na visão geral da VM, clique em **Conectar > RDP**.
+![imagem1](images/portal-quick-start-9.png)
 2. Mantenha as opções padrão (IP e porta 3389) e clique em **Baixar arquivo RDP**.
 3. Abra o `.rdp`, informe as credenciais (`azureuser` e senha) e confirme o certificado se solicitado.
 
@@ -69,7 +80,7 @@ As máquinas virtuais (VMs) do Azure podem ser criadas por meio do Portal do Azu
 
 1. No portal, na visão geral da VM, passe o mouse sobre o **IP público** e clique em **Copiar**.
 2. Cole o IP em um navegador externo; a página de boas-vindas do IIS será exibida.
-
+![imagem 1](images/default-iis-website.png)
 ---
 
 ## 6. Limpar Recursos
